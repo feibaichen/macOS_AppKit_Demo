@@ -21,15 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CustomCollectionViewItem *item = [[CustomCollectionViewItem alloc] initWithNibName:@"CustomCollectionViewItem" bundle:nil];
-    [item itemClickHandler:^(NSString *title) {
-        NSLog(@"点击了 %@", title);
-    }];
-    self.item = item;
-    self.collectionView.itemPrototype = self.item;
-    self.collectionView.content = self.content;
+    NSCollectionView *collectionView = [[NSCollectionView alloc] initWithFrame:self.view.bounds];
+    [collectionView setAutoresizingMask:YES];
+    [collectionView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     
-    [self.view addSubview:self.collectionView];
+    CustomCollectionViewItem *item = [[CustomCollectionViewItem alloc] initWithNibName:@"CustomCollectionViewItem" bundle:nil];
+    
+    //self.item = item;
+    collectionView.itemPrototype = item;
+    collectionView.content = self.content;
+    
+    [self.view addSubview:collectionView];
 }
 
 - (NSCollectionView *)collectionView {

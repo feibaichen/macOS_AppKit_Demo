@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CustomCollectionViewItem : NSCollectionViewItem
-
-- (void)itemClickHandler:(void (^)(NSString *title))clickHandler;
+@property (weak) IBOutlet NSTextField *myText;
+@property (weak) IBOutlet NSImageView *myImageView;
 
 @end

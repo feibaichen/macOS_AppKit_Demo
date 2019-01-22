@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22BD93AB21F6B03A008179FD /* CustomCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 616905B71DFE969D001BB03B /* CustomCollectionViewItem.m */; };
+		22BD93AC21F6B056008179FD /* CustomCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 616905B81DFE969D001BB03B /* CustomCollectionViewItem.xib */; };
+		22BD93AD21F6B13F008179FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616905831DFE7209001BB03B /* ViewController.m */; };
+		22BD93AF21F6EEF4008179FD /* past.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BD93AE21F6EEF4008179FD /* past.png */; };
 		6169057E1DFE7209001BB03B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6169057D1DFE7209001BB03B /* AppDelegate.m */; };
 		616905811DFE7209001BB03B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 616905801DFE7209001BB03B /* main.m */; };
-		616905841DFE7209001BB03B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616905831DFE7209001BB03B /* ViewController.m */; };
 		616905861DFE7209001BB03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616905851DFE7209001BB03B /* Assets.xcassets */; };
 		616905891DFE7209001BB03B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616905871DFE7209001BB03B /* Main.storyboard */; };
-		616905B91DFE969D001BB03B /* CustomCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 616905B71DFE969D001BB03B /* CustomCollectionViewItem.m */; };
-		616905BA1DFE969D001BB03B /* CustomCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 616905B81DFE969D001BB03B /* CustomCollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22BD93AE21F6EEF4008179FD /* past.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = past.png; sourceTree = "<group>"; };
 		616905791DFE7209001BB03B /* 基本控件.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "基本控件.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6169057C1DFE7209001BB03B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6169057D1DFE7209001BB03B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		6169057B1DFE7209001BB03B /* 基本控件 */ = {
 			isa = PBXGroup;
 			children = (
+				22BD93AE21F6EEF4008179FD /* past.png */,
 				6169057C1DFE7209001BB03B /* AppDelegate.h */,
 				6169057D1DFE7209001BB03B /* AppDelegate.m */,
 				616905821DFE7209001BB03B /* ViewController.h */,
@@ -142,9 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BD93AC21F6B056008179FD /* CustomCollectionViewItem.xib in Resources */,
+				22BD93AF21F6EEF4008179FD /* past.png in Resources */,
 				616905861DFE7209001BB03B /* Assets.xcassets in Resources */,
 				616905891DFE7209001BB03B /* Main.storyboard in Resources */,
-				616905BA1DFE969D001BB03B /* CustomCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616905841DFE7209001BB03B /* ViewController.m in Sources */,
+				22BD93AD21F6B13F008179FD /* ViewController.m in Sources */,
+				22BD93AB21F6B03A008179FD /* CustomCollectionViewItem.m in Sources */,
 				616905811DFE7209001BB03B /* main.m in Sources */,
-				616905B91DFE969D001BB03B /* CustomCollectionViewItem.m in Sources */,
 				6169057E1DFE7209001BB03B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
