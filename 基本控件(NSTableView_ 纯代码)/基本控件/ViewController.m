@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowDidResize) name:NSWindowDidResizeNotification object:nil];
+    
     self.tableViewScrollView.documentView = self.tableView;
     [self.view addSubview:self.tableViewScrollView];
     
@@ -33,6 +35,7 @@
         make.bottom.equalTo(self.view.mas_bottom).with.offset(-30);
         make.right.equalTo(self.view.mas_right).with.offset(-10);
     }];
+    
 }
 
 #pragma mark - Lazy load
@@ -79,7 +82,20 @@
                                                        @{@"name": @"Lily", @"address": @"USA"},
                                                        @{@"name": @"Tom", @"address": @"Canada"},
                                                        @{@"name": @"Lucy", @"address": @"Russia"},
-                                                       @{@"name": @"John", @"address": @"Japan"}]];
+                                                       @{@"name": @"John", @"address": @"Japan"},
+                                                       @{@"name": @"Lucy2", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy3", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy4", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy5", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy6", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy7", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy8", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy9", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy10", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy11", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy12", @"address": @"Russia"},
+                                                       @{@"name": @"Lucy13", @"address": @"Russia"}
+                                                       ]];
     }
     return _dataSource;
 }
@@ -125,6 +141,12 @@
     CustomTableCellView *contentView = [tableView viewAtColumn:0 row:tableView.selectedRow makeIfNecessary:NO];
     contentView.label.wantsLayer = YES;
     contentView.label.textColor = [NSColor blueColor];
+}
+
+- (void)windowDidResize{
+   
+    NSWindow *window = [NSApplication sharedApplication].mainWindow;
+    window.maxSize = CGSizeMake(1000, self.dataSource.count * 30);
 }
 
 @end

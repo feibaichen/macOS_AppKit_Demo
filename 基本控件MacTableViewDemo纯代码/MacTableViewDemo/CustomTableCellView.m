@@ -21,7 +21,7 @@
     label.editable = NO;
     label.bordered = NO;
     label.backgroundColor = [NSColor clearColor];
-    label.textColor = [NSColor whiteColor];
+    label.textColor = [NSColor blackColor];
     [self addSubview:label];
 }
 

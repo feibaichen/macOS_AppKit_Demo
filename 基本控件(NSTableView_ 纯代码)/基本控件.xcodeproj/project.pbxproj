@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22CA42D521F965EF007B43C5 /* CustomerHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA42D421F965EF007B43C5 /* CustomerHeadView.m */; };
 		611B24611E022DBB0078BED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 611B24601E022DBB0078BED6 /* AppDelegate.m */; };
 		611B24641E022DBB0078BED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 611B24631E022DBB0078BED6 /* main.m */; };
 		611B24671E022DBB0078BED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 611B24661E022DBB0078BED6 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22CA42D321F965EF007B43C5 /* CustomerHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerHeadView.h; sourceTree = "<group>"; };
+		22CA42D421F965EF007B43C5 /* CustomerHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerHeadView.m; sourceTree = "<group>"; };
 		611B245C1E022DBB0078BED6 /* 基本控件.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "基本控件.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611B245F1E022DBB0078BED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		611B24601E022DBB0078BED6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				611B249A1E0279E50078BED6 /* CustomTableRowView.m */,
 				614C7B411E0781E80048D7E8 /* CustomTableCellView.h */,
 				614C7B421E0781E80048D7E8 /* CustomTableCellView.m */,
+				22CA42D321F965EF007B43C5 /* CustomerHeadView.h */,
+				22CA42D421F965EF007B43C5 /* CustomerHeadView.m */,
 				611B24681E022DBB0078BED6 /* Assets.xcassets */,
 				611B246A1E022DBC0078BED6 /* Main.storyboard */,
 				611B246D1E022DBC0078BED6 /* Info.plist */,
@@ -240,6 +245,7 @@
 				611B24611E022DBB0078BED6 /* AppDelegate.m in Sources */,
 				611B24981E0232730078BED6 /* ViewController+MASAdditions.m in Sources */,
 				611B24971E0232730078BED6 /* View+MASAdditions.m in Sources */,
+				22CA42D521F965EF007B43C5 /* CustomerHeadView.m in Sources */,
 				611B24931E0232730078BED6 /* MASViewAttribute.m in Sources */,
 				611B24901E0232730078BED6 /* MASConstraint.m in Sources */,
 				611B24911E0232730078BED6 /* MASConstraintMaker.m in Sources */,
